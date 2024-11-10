@@ -1,16 +1,40 @@
-<h1>Guess the Number from 1 to 10</h1>
-<input id = "num" type="number"> 
-<button onclick="check()">check</button>
-<p id="para1">You are wrong!</p>
-<p id="para2">Your life : 10</p>
-<p id="parra3"> your Total score : </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RandomNoGame</title>
+</head>
+<body>
+    <center>
+        <h1>Guess the Number from 1 to 10</h1>
+        </center>
+        
+        <hr>
+        
+        <center>
+            <div id="div1">
+                <input id = "num" type="number"> 
+                <button onclick="check()">check</button>
+                <p id="para1">Let's Begin </p>
+                <p id="para2">Your life : 10</p>
+                <p id="para3"> Your Total score will apper here _ </p>
+            </div>
+        </center>
+        
+        <hr>
+
+        <link rel="stylesheet" href="style.css">
+        
+</body>
+</html>
 
 
 <script>
         var box   = document.getElementById("num")
         var para1 = document.getElementById("para1")
-        var para2 =document.getElementById("para2")
-        var para3 =document.getElementById("parra3")
+        var para2 = document.getElementById("para2")
+        var para3 = document.getElementById("para3")
 
         var b = 10
         var c = 0
@@ -23,7 +47,7 @@
 
             
             if(b==0){
-                parra3.textContent ="your Total score :"+ c
+                para3.textContent ="your Total score :"+ c
             }else if(box1!=random)
             {
                 b--
